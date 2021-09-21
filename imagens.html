@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background: gray;
+}
+
+@font-face{ 
+src: url('./fonts/MedievalSharp/MedievalSharp-Regular.ttf');
+font-family: 'MedievalSharp';
+font-weight: normal;
+}
+
+h1{font-family:'MedievalSharp';
+font-size:70px;
+}
+
+.top{
+    text-align: center;
+    width:550px ;
+    height: 180px; ;
+    display: inline-block;
+    margin-left: 36%;
+}
+
+.top>p{
+    font-family: Arial;
+    font-size: 23px;
+}
+
+.home{
+    height: 25px;
+    width: 200px;
+    text-align: left;
+    padding-top: 8px;
+}
+
+.selection{
+    list-style: none;
+    display: flex;
+    margin: 10%;
+}
+
+.size{
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.galery{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.galery:target{
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(10,10,10,.7);
+    position: fixed;
+}
+
+.box>img{
+    width: 1500px;
+    height: 1000px;
+    margin: 2% 10.5%;
+}
+
+.button{
+    color: white;
+    font-family: arial;
+    text-decoration: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#prev{
+    left: 5%;
+    top: 45%;
+}
+
+#next{
+    right: 5%;
+    top: 45%;
+}
+
+#close{
+    top: 0;
+    right: 2%;
+}
+
+</style>
+
+<body>
+
+    <div class="home"><!--return-->
+        <a href="index.html">&#8592; Página Inicial</a>
+    </div><!--return-->
+
+    <div class="top">
+        <h1>Estrelas do Rock</h1>
+
+        <p>A seguir algumas referencias quando o assunte é Rock'n Roll</p>
+    </div>
+   
+    <ul class="selection"><!--imgs miniatura-->
+        <li><a href="#img1"><img src="./Imagens/met2.jpg" class="size"></a></li>
+        <li><a href="#img2"><img src="./Imagens/angr1.jpg" class="size"></a></li>
+        <li><a href="#img3"><img src="./Imagens/trs1.jpg" class="size"></a></li>
+        <li><a href="#img4"><img src="./Imagens/scorp1.jpg" class="size"></a></li>
+        <li><a href="#img5"><img src="./Imagens/link1.jpg" class="size"></a></li>
+        <li><a href="#img6"><img src="./Imagens/met1.jpg" class="size"></a></li>
+        <li><a href="#img7"><img src="./Imagens/angr2.jpg" class="size"></a></li>
+        <li><a href="#img8"><img src="./Imagens/ff1.jpg" class="size"></a></li>
+        <li><a href="#img9"><img src="./Imagens/kis1.jpg" class="size"></a></li>
+        <li><a href="#img10"><img src="./Imagens/aer1.jpg" class="size"></a></li>
+        <li><a href="#img11"><img src="./Imagens/iron1.jpg" class="size"></a></li>
+    </ul><!--imgs miniatura-->
+
+    <p>*clique nas imagens para melhor visualização</p>
+
+<div class="galery" id="img1">
+    <div class="box">
+        <img src="./Imagens/met2.jpg">
+        <a href="" class="button" id="close">X</a>
+        <a href="#img2" class="button" id="next">&#187;</a>
+    </div>
+</div>
+<div class="galery" id="img2">
+    <div class="box">
+        <a href="#img1" class="button" id="prev">&#171;</a>
+        <img src="./Imagens/angr1.jpg">
+        <a href="" class="button" id="close">X</a>
+        <a href="#img3" class="button" id="next">&#187;</a>
+    </div>
+</div>
+<div class="galery" id="img3">
+    <div class="box">
+        <a href="#img2" class="button" id="prev">&#171;</a>
+        <img src="./Imagens/trs1.jpg">
+        <a href="" class="button" id="close">X</a>
+        <a href="#img4" class="button" id="next">&#187;</a>
+    </div>
+</div>
+<div class="galery" id="img4">
+    <div class="box">
+        <a href="#img3" class="button" id="prev">&#171;</a>
+        <img src="./Imagens/scorp1.jpg">
+        <a href="" class="button" id="close">X</a>
+        <a href="#img5" class="button" id="next">&#187;</a>
+    </div>
+</div>
+<div class="galery" id="img5">
+    <div class="box">
+        <a href="#img4" class="button" id="prev">&#171;</a>
+        <img src="./Imagens/link1.jpg">
+        <a href="" class="button" id="close">X</a>
+        <a href="#img6" class="button" id="next">&#187;</a>
+    </div>
+</div>
+<div class="galery" id="img6">
+    <div class="box">
+        <a href="#img5" class="button" id="prev">&#171;</a>
+        <img src="./Imagens/met1.jpg">
+        <a href="" class="button" id="close">X</a>
+        <a href="#img7" class="button" id="next">&#187;</a>
+    </div>
+</div>
+<div class="galery" id="img7">
+    <div class="box">
+        <a href="#img6" class="button" id="prev">&#171;</a>
+        <img src="./Imagens/angr2.jpg">
+        <a href="" class="button" id="close">X</a>
+        <a href="#img8" class="button" id="next">&#187;</a>
+    </div>
+</div>
+<div class="galery" id="img8">
+    <div class="box">
+        <a href="#img7" class="button" id="prev">&#171;</a>
+        <img src="./Imagens/ff1.jpg">
+        <a href="" class="button" id="close">X</a>
+        <a href="#img9" class="button" id="next">&#187;</a>
+    </div>
+</div>
+<div class="galery" id="img9">
+    <div class="box">
+        <a href="#img8" class="button" id="prev">&#171;</a>
+        <img src="./Imagens/kis1.jpg">
+        <a href="" class="button" id="close">X</a>
+        <a href="#img10" class="button" id="next">&#187;</a>
+    </div>
+</div>
+<div class="galery" id="img10">
+    <div class="box">
+        <a href="#img9" class="button" id="prev">&#171;</a>
+        <img src="./Imagens/aer1.jpg">
+        <a href="" class="button" id="close">X</a>
+        <a href="#img11" class="button" id="next">&#187;</a>
+    </div>
+</div>
+<div class="galery" id="img11">
+    <div class="box">
+        <a href="#img10" class="button" id="prev">&#171;</a>
+        <img src="./Imagens/iron1.jpg">
+        <a href="" class="button" id="close">X</a>
+    </div>
+</div>
+
+</body>
+</html>

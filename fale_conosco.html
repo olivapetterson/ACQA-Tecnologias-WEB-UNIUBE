@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+</head>
+
+<style>
+
+*{text-align: center;}
+table{
+    padding: .7em;
+    margin: 0 auto;
+}
+
+.home{
+  text-align: left;
+  padding-top: 8px;
+}
+
+</style>
+
+<body>
+
+    <div class="home"><!--return-->
+        <a href="index.html">&#8592; Página Inicial</a>
+    </div><!--return-->
+
+    <h2>Fale conosco</h2>
+    <div class="form"><!--inicio form-->
+        <h4>Compra de ingressos para show de rock</h4>
+
+        <form>
+            <p>Informações básicas para contato</p>
+            <input type="text" placeholder="Nome">
+            <input type="email" placeholder="E-mail">
+            <input type="tel" maxlength="11" placeholder="Telefone">
+            <p>Formas de pagamento</p>
+            <input type="radio" name="pagamento" value="Boleto">Boleto
+            <input type="radio" name="pagamento" value="Pix">Pix
+            <input type="radio" name="pagamento" value="Cred">Cartão de Crédito
+            <input type="radio" name="pagamento" value="Transf">Transferência Bancária
+            <p>Quais estilos te interessão?</p>
+            <input type="checkbox" name="estilo" value="Classico">Rock Clássico
+            <input type="checkbox" name="estilo" value="Progressivo">Rock Progressivo
+            <input type="checkbox" name="estilo" value="Metal">Rock Metal
+            <input type="checkbox" name="estilo" value="Folk">Rock Folk
+            <input type="checkbox" name="estilo" value="Outro">Outro
+            <p>Informações adicionais</p>
+            <textarea type="textarea" placeholder="Digite sua Mensagem"></textarea>
+            <br>
+            <input type="submit" id="submit" required>
+        </form>
+    </div><!--fim form-->
+
+    <div class="table"><!--inicio tabela-->
+        <table width="%" heigth="" border="5px">
+            <p>Preços</p>
+                <tr>
+                    <th>Estilo</th>
+                    <th>Valor ingresso</th>
+                    <th>Valor Meia</th>
+                </tr>
+                <tr>
+                  <td>Rock Clássico</td>
+                  <td>R$110</td>
+                  <td>R$55</td>    
+                </tr>
+                <tr>
+                    <td>Rock Progressivo</td>
+                    <td>R$100</td>
+                    <td>R$50</td>    
+                  </tr>
+                  <tr>
+                    <td>Rock Metal</td>
+                    <td>R$120</td>
+                    <td>R$60</td>    
+                  </tr>
+                  <tr>
+                    <td>Rock Folk</td>
+                    <td>R$90</td>
+                    <td>R$45</td>    
+                  </tr>
+                  <tr>
+                    <td>Outros</td>
+                    <td>R$80</td>
+                    <td>R$40</td>    
+                  </tr>                  
+         </table>
+
+         <p><u>*Valores de Outros sujeitos a divergencia consulta com um vendedor</u></p>
+    </div><!--fim tabela-->
+</body>
+</html>
